@@ -154,8 +154,6 @@ def top3_panel(ax, x, y, w, h):
     ax.text(x + w - 1.4, y + h - 2.6, "지수 · 주된 동인", fontsize=6.8,
             color=SUBINK, ha="right", va="center", zorder=6)
 
-    drivers = {"B2": "경보 83 · 혼재 57%", "B3": "혼재 77% · 미조치 4",
-               "D2": "미조치 11 · 아차 4"}
     top = df.sort_values("RiskIndex", ascending=False).head(3)
     for i, r in enumerate(top.itertuples()):
         ry = y + h - 4.9 - i * 2.6
@@ -173,8 +171,8 @@ def top3_panel(ax, x, y, w, h):
                                edgecolor="none", zorder=6))
         ax.text(x + 21.4, ry, f"{r.RiskIndex:.1f}", fontsize=8.8,
                 fontweight="bold", color=INK, va="center", zorder=6)
-        ax.text(x + 25.6, ry, drivers.get(r.Subzone, ""), fontsize=6.6,
-                color=SUBINK, va="center", zorder=6)
+        ax.text(x + 25.4, ry, f"주동인 {r.TopDriver} {r.TopDriverShare:.0f}%",
+                fontsize=6.7, color=SUBINK, va="center", zorder=6)
 
 
 def main():
