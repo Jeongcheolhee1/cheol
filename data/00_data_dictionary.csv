@@ -1,0 +1,245 @@
+File_Name,Column_Name,Korean_Description,Unit_or_Format,Data_Type,Code_or_Rule,Dataset_Description
+01_master_schedule.csv,WBS,공정분류체계 코드,text,string,해당 파일·참조테이블의 식별자 규칙 참조,WBS 기반 종합공정표
+01_master_schedule.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,WBS 기반 종합공정표
+01_master_schedule.csv,Building,동·시설 구분,text,string,1동 | 2동 | 공통 | 포디움,WBS 기반 종합공정표
+01_master_schedule.csv,Zone,대구역 코드,text,string,A | B | C | D,WBS 기반 종합공정표
+01_master_schedule.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | A4 | B1 | B2 | B3 | C1 | C2 | C3 | D1 | D2 | D3,WBS 기반 종합공정표
+01_master_schedule.csv,Trade,공종,text,string,가설·물류 | 기계설비 | 물류 | 안전·가설 | 안전·양중 | 외장 | 외장·양중 | 전기 | 철골·양중 | 철근콘크리트 | 토공·가설 | 토목·방수,WBS 기반 종합공정표
+01_master_schedule.csv,Task_Name,작업명,text,string,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Predecessor,선행 공정 ID,text,string,T001 | T002 | T003 | T004 | T007 | T008 | T010 | T013 | T015 | T016,WBS 기반 종합공정표
+01_master_schedule.csv,Planned_Start,계획 착수일,YYYY-MM-DD,date,2026-10-01 | 2026-10-05 | 2026-10-07 | 2026-10-08 | 2026-10-12 | 2026-10-13 | 2026-10-14 | 2026-10-15 | 2026-10-16 | 2026-10-19 | 2026-10-20,WBS 기반 종합공정표
+01_master_schedule.csv,Planned_Finish,계획 완료일,YYYY-MM-DD,date,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Actual_Start,실제 착수일,YYYY-MM-DD,date,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Actual_Finish,실제 완료일,YYYY-MM-DD,date,2026-10-08 | 2026-10-12 | 2026-10-16 | 2026-10-17 | 2026-10-20 | 2026-10-21 | 2026-10-22 | 2026-10-23 | 2026-10-24 | 2026-10-30,WBS 기반 종합공정표
+01_master_schedule.csv,Forecast_Finish,예측 완료일,YYYY-MM-DD,date,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Base_Crew_Size,기준 작업조 인원,명,number,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Subcontractor,작업팀·협력사,text,string,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Primary_Equipment,주요 장비,text,string,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Delay_Reason_Code,지연사유 코드,text,string,CLOSEOUT_DELAY | DELIVERY_PRESSURE | DRAWING_REWORK | LIFT_CONFLICT | LIFT_SLOT | MAT_DELAY | MEP_CONFLICT | MOB_DELAY | NONE | ONGOING | PERMIT_DELAY | ROUTE_CONFLICT | SPACE_CONFLICT | WIND_HOLD,WBS 기반 종합공정표
+01_master_schedule.csv,Progress_Pct,기준일 진도율,%,number,100 | 29 | 40 | 60 | 64 | 65 | 71 | 87,WBS 기반 종합공정표
+01_master_schedule.csv,Status_AsOf_2026_10_31,기준일 공정상태,text,string,Completed | In Progress,WBS 기반 종합공정표
+01_master_schedule.csv,Planned_Duration_Days,계획 작업일수,작업일,number,자유기재 또는 연계키 기준,WBS 기반 종합공정표
+01_master_schedule.csv,Forecast_Variance_Days,계획대비 예측 편차일,작업일,number,-1 | 0 | 1 | 2 | 3,WBS 기반 종합공정표
+01_master_schedule.csv,Zone_Name,대구역 명칭,text,string,1동 지상골조 구역 | 2동 지하 설비·토목 구역 | 메인게이트·하역·적치 구역 | 포디움 외장·양중 구역,WBS 기반 종합공정표
+01_master_schedule.csv,Subzone_Name,세부구역 명칭,text,string,1동 슬래브·타설 작업면 | 1동 코어·벽체 골조 | 1동 호이스트·작업자 진입 | 2동 지하2층(B2F) 설비작업 | 2동 지하3층(B3F) 토목·방수 | 메인게이트·차량대기 | 이동식크레인 작업구역 | 자재적치장 | 자재하역장 | 지하램프 공용출입 | 타워크레인 반경 중첩 | 포디움 동측 외장,WBS 기반 종합공정표
+01_master_schedule.csv,Predecessor_Relation,선행관계 유형,text,string,"FS | SS | SS(구획별) | 공란(독립/지원공정). 계획일은 Planned_Start·Planned_Finish 기준이며, 관계는 구획별 병행 여부를 설명하는 용도",WBS 기반 종합공정표
+01_master_schedule.csv,Duration_Basis,공기 산정 기준,text,string,"작업일(일요일·공휴일 제외: 2026-10-09, 2026-12-25, 2027-01-01). 분석기간·90일 계획 공통 주 6일 기준",WBS 기반 종합공정표
+01_master_schedule.csv,Work_Package_Note,공정·구획 설명,text,string,구획별 배근 완료 후 후속 타설 허용 | 상시 운영공정 | 상시 적치·불출공정 | 상시 하역지원공정 | 슬래브 3개 타설구획 순차 시공. 각 구획 철근배근·검측 완료 후 해당 구획 타설 가능,WBS 기반 종합공정표
+02_daily_work_plan.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,일일 작업계획·실적
+02_daily_work_plan.csv,WBS,공정분류체계 코드,text,string,해당 파일·참조테이블의 식별자 규칙 참조,일일 작업계획·실적
+02_daily_work_plan.csv,Building,동·시설 구분,text,string,1동 | 2동 | 공통 | 포디움,일일 작업계획·실적
+02_daily_work_plan.csv,Zone,대구역 코드,text,string,A | B | C | D,일일 작업계획·실적
+02_daily_work_plan.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | B1 | B2 | B3 | C1 | C2 | C3 | D1 | D2 | D3,일일 작업계획·실적
+02_daily_work_plan.csv,Subcontractor,작업팀·협력사,text,string,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Trade,공종,text,string,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Task_Name,작업명,text,string,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Planned_Workers,계획 투입인원,명,number,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Actual_Workers,실제 투입인원,명,number,자유기재 또는 연계키 기준,일일 작업계획·실적
+02_daily_work_plan.csv,Start_Time,작업 시작시각,HH:MM,string,07:00 | 07:45 | 07:50 | 08:00,일일 작업계획·실적
+02_daily_work_plan.csv,End_Time,작업 종료시각,HH:MM,string,17:00,일일 작업계획·실적
+02_daily_work_plan.csv,Risk_Level,작업 위험수준,text,string,High | Low | Medium,일일 작업계획·실적
+02_daily_work_plan.csv,Crew_Waiting_Minutes,작업조 대기시간,min,number,0 | 10 | 15 | 150 | 20 | 25 | 30 | 40 | 60 | 90,일일 작업계획·실적
+02_daily_work_plan.csv,Daily_Remark,일일 작업 특이사항,text,string,자유기재 또는 연계키 기준,일일 작업계획·실적
+03_gate_attendance.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,시간대별 출역 집계
+03_gate_attendance.csv,Time_Slot,시간구간,text,string,06:30-07:00 | 07:00-07:30 | 07:30-08:00 | 16:30-17:00 | 17:00-17:30,시간대별 출역 집계
+03_gate_attendance.csv,Trade_Group,공종군,text,string,"골조 | 물류 | 설비 | 안전 | 외장 | 전기 | 철골 | 토목 | 관리·지원 (관리·지원=원청 관리인력 6명+당일 가동 장비 운전원, 작업일보 미포함)",시간대별 출역 집계
+03_gate_attendance.csv,Entry_Count,입장 인원,명,number,자유기재 또는 연계키 기준,시간대별 출역 집계
+03_gate_attendance.csv,Exit_Count,퇴장 인원,명,number,자유기재 또는 연계키 기준,시간대별 출역 집계
+04_camera_object_log.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Camera_ID,카메라 식별번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Zone,대구역 코드,text,string,A | B | C | D,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Subzone,세부구역 코드,text,string,자유기재 또는 연계키 기준,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Slot_Start,관측구간 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Slot_End,관측구간 종료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,People_Count,카메라 화각 내 시간구간 중 최대 동시 검출 인원,명,number,누적 인원이 아닌 최대 동시 검출인원. 화각·미검출 한계 존재,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Forklift_Count,해당 시간구간 내 최대 동시 검출 지게차 대수,대,number,0 | 1 | 2 | 3,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Excavator_Count,해당 시간구간 내 최대 동시 검출 굴착기 대수,대,number,0 | 1 | 2,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Truck_Count,카메라 화각 내 시간구간 중 최대 동시 검출 차량대수,대,number,최대 동시대수(누적 아님). B1은 게이트 통과 순간과 B1 외부대기열(레미콘)을 검출하며 현장 외 지정대기 차량은 화각 밖. A4 화각은 레미콘의 진입·대기·펌프 연결 차량을 모두 포함하므로 Gate_In~Gate_Out 동시대수와 대응(펌프 연결 중 차량은 1대),가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Crane_Active,해당 시간구간 양중작업 존재 여부(0/1),0/1,number,0 | 1,가상 AI CCTV 시간구간 객체검출 로그
+04_camera_object_log.csv,Proximity_Alert_Count,교육용 가상 근접상황 이벤트 건수. 작업자-차량·장비 혼재상황을 모사하며 위험지수·정답값이 아님,건,number,가상 근접 이벤트 건수; 위험도 정답값이 아님,가상 AI CCTV 시간구간 객체검출 로그
+05_delivery_log.csv,Delivery_ID,반입 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Source_Document_No,원천 반입대장 문서번호,text,string,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Truck_ID,차량 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Material_Category,자재 분류,text,string,거푸집 | 데크 | 레미콘 | 방수자재 | 설비 | 외장자재 | 전기 | 철골 | 철근 | 커튼월,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Material_Name,자재명,text,string,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Delivery_Size_Class,반입운영 구분,text,string,대형 | 연속타설,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Delivery_Point_Zone,실제 반입·연결 지점 대구역,text,string,A | B,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Delivery_Point_Subzone,실제 반입·연결 지점 세부구역,text,string,"일반자재=B2, 레미콘=A4",자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Final_Target_Zone,최종 사용 대구역,text,string,A | C | D,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Final_Target_Subzone,최종 사용 세부구역,text,string,A1 | A2 | C1 | C3 | D2 | D3,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Receiving_Team,인수 작업팀,text,string,협력사A(철근) | 협력사J(설비) | 협력사C(데크) | 협력사I(토목) | 협력사G(외장) | 협력사B(형틀) | 협력사K(전기) | 협력사D(콘크리트) | 협력사H(철골),자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Reserved_Start,예약 시작일시,YYYY-MM-DD HH:MM,datetime,대형 일반자재 09:00-11:00 또는 14:00-16:00 시작; 레미콘은 연속타설 배차계획(목표간격 12~15분),자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Reserved_End,예약 종료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Arrival_Time,현장 인근 도착일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Gate_In_Time,게이트 입문일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Unload_Start_Time,하역·연결 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Unload_End_Time,하역·연결 완료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Gate_Out_Time,게이트 출문일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Waiting_Location,대기 위치,text,string,B1 외부대기열 | 현장 외 지정대기,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Unloading_Method,하역·연결 방법,text,string,지게차 하역 | 펌프카 연결,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Unloading_Equipment_ID,하역·연결 장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Related_Staging_Subzone,관련 적치·거치 구역,text,string,A3 | A4 | B3 | C2 | C3,자재·레미콘 반입 및 하역·연결 기록
+05_delivery_log.csv,Delivery_Status,반입 상태,text,string,반입완료,자재·레미콘 반입 및 하역·연결 기록
+06_lifting_log.csv,Lift_ID,양중 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,크레인 양중 계획·실적
+06_lifting_log.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,크레인 양중 계획·실적
+06_lifting_log.csv,Permit_ID,작업허가 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,크레인 양중 계획·실적
+06_lifting_log.csv,Equipment_ID,장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,크레인 양중 계획·실적
+06_lifting_log.csv,Lift_Type,양중 유형,text,string,거푸집양중 | 데크양중 | 외장자재양중 | 철골양중 | 철근양중 | 커튼월양중 | 호이스트부재양중,크레인 양중 계획·실적
+06_lifting_log.csv,Source_Subzone,인양 출발구역,text,string,A3 | C2 | C3,크레인 양중 계획·실적
+06_lifting_log.csv,Target_Subzone,인양 도착구역,text,string,A1 | A2 | A3 | C1 | C3,크레인 양중 계획·실적
+06_lifting_log.csv,Material,인양 자재,text,string,D13/D16 슬래브 철근 | D25 철근 번들 | 데크플레이트 | 보강철골 부재 | 브래킷·앵커 | 알루미늄 폼 패널 | 커튼월 패널 | 커튼월 패널(C2 기적치분) | 호이스트 마스트 섹션,크레인 양중 계획·실적
+06_lifting_log.csv,Load_ton,인양 중량,ton,number,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Planned_Start,계획 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Planned_End,계획 종료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Actual_Start,실제 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Actual_End,실제 종료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,크레인 양중 계획·실적
+06_lifting_log.csv,Wind_mps,양중 작업 판단용 지브 높이 보정풍속(가상값),m/s,number,"작업 시작시각이 속한 정시 시간대의 지상 10m 10분 평균풍속 × 높이보정계수(TC-01 1.35, TC-02 1.25, MC-01 1.15, 교육용 가정), 소수 첫째 자리 반올림(사사오입). 예: 13:42 시작 → 13:00 기상자료 적용",크레인 양중 계획·실적
+06_lifting_log.csv,Wind_Limit_mps,작업중지 기준 풍속,m/s,number,10.0 | 12.0,크레인 양중 계획·실적
+06_lifting_log.csv,Status,상태,text,string,보류 | 완료 | 취소,크레인 양중 계획·실적
+06_lifting_log.csv,Hold_Reason,보류·취소 사유,text,string,없음 | 풍속 기준 초과 | 연계 반입 하역 미완료,크레인 양중 계획·실적
+06_lifting_log.csv,Related_Delivery_ID,연계 반입 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,크레인 양중 계획·실적
+06_lifting_log.csv,Signalman,신호수 구분,text,string,신호수C | 양중반장A | 양중반장B,크레인 양중 계획·실적
+06_lifting_log.csv,Rigging_Check,결속점검 결과,text,string,샤클 교체 후 적합 | 재결속 후 적합 | 적합,크레인 양중 계획·실적
+06_lifting_log.csv,Operator_Note,장비 운전 특이사항,text,string,배제구역 확인 후 진행 | 신호수 위치 재확인 후 진행 | 자재 결속상태 재확인 | 작업면 정리 후 진행 | 정상 | 풍속 확인 후 작업 보류,크레인 양중 계획·실적
+07_equipment_log.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,장비 일일 가동·대기 기록
+07_equipment_log.csv,Equipment_ID,장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,장비 일일 가동·대기 기록
+07_equipment_log.csv,Equipment_Type,장비 종류,text,string,건설용 호이스트 | 고소작업대 | 굴착기 | 이동식크레인 | 지게차 | 타워크레인 | 펌프카,장비 일일 가동·대기 기록
+07_equipment_log.csv,Specification,장비 규격,text,string,자유기재 또는 연계키 기준,장비 일일 가동·대기 기록
+07_equipment_log.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,장비 일일 가동·대기 기록
+07_equipment_log.csv,Primary_Zone,주 운용 대구역,text,string,A | B | B/D | C | D,장비 일일 가동·대기 기록
+07_equipment_log.csv,Shift_Start,장비 근무 시작시각,HH:MM,string,08:00,장비 일일 가동·대기 기록
+07_equipment_log.csv,Shift_End,장비 근무 종료시각,HH:MM,string,17:00,장비 일일 가동·대기 기록
+07_equipment_log.csv,Operation_Minutes,장비 실제 작업·가동시간,min,number,자유기재 또는 연계키 기준,장비 일일 가동·대기 기록
+07_equipment_log.csv,Waiting_Minutes,장비 대기시간,min,number,자유기재 또는 연계키 기준,장비 일일 가동·대기 기록
+07_equipment_log.csv,Maintenance_Minutes,근무시간 내 점검·정비시간,min,number,0 | 10 | 15 | 20 | 30,장비 일일 가동·대기 기록
+07_equipment_log.csv,Work_Description,장비 작업내용,text,string,A4 펌프카 거치·A2 타설 압송 | 고소작업 지원 | 굴착·정리·토목 작업 | 양중·선회·훅정리·작업대기 포함 | 자재 하역·이송 | 호이스트 설치·시운전,장비 일일 가동·대기 기록
+07_equipment_log.csv,Operator_ID,장비 전담 운전원 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,장비 일일 가동·대기 기록
+07_equipment_log.csv,Notes,비고,text,string,자유기재 또는 연계키 기준,장비 일일 가동·대기 기록
+08_risk_assessment.csv,Risk_ID,위험성평가 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,위험성평가
+08_risk_assessment.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,위험성평가
+08_risk_assessment.csv,Zone,대구역 코드,text,string,A | B | C | D,위험성평가
+08_risk_assessment.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | A4 | B1 | B2 | B3 | C1 | C2 | C3 | D1 | D2 | D3,위험성평가
+08_risk_assessment.csv,Trade,공종,text,string,가설·물류 | 기계설비 | 물류 | 안전·가설 | 안전·양중 | 외장 | 외장·양중 | 전기 | 철골·양중 | 철근콘크리트 | 토공·가설 | 토목·방수,위험성평가
+08_risk_assessment.csv,Assessment_Type,평가 구분,text,string,수시 | 최초,위험성평가
+08_risk_assessment.csv,Hazard_Description,위험요인 설명,text,string,자유기재 또는 연계키 기준,위험성평가
+08_risk_assessment.csv,Hazard_Category,위험유형,text,string,자유기재 또는 연계키 기준,위험성평가
+08_risk_assessment.csv,Frequency_Score,개선 전 가능성 점수,number,number,2 | 3 | 4,위험성평가
+08_risk_assessment.csv,Severity_Score,개선 전 중대성 점수,number,number,3 | 4 | 5,위험성평가
+08_risk_assessment.csv,Initial_Risk_Score,개선 전 위험도(가능성×중대성),number,number,10 | 12 | 15 | 16 | 20 | 9,위험성평가
+08_risk_assessment.csv,Existing_Control,기존 안전대책,text,string,자유기재 또는 연계키 기준,위험성평가
+08_risk_assessment.csv,Additional_Control,추가 개선대책,text,string,자유기재 또는 연계키 기준,위험성평가
+08_risk_assessment.csv,Residual_Frequency_Score,개선 후 가능성 점수,number,number,1 | 2,위험성평가
+08_risk_assessment.csv,Residual_Severity_Score,개선 후 중대성 점수,number,number,2 | 3 | 4 | 5,위험성평가
+08_risk_assessment.csv,Residual_Risk_Score,개선 후 위험도(가능성×중대성),number,number,10 | 12 | 15 | 2 | 3 | 4 | 5 | 6 | 8 | 9,위험성평가
+08_risk_assessment.csv,Owner_Team,관리 책임팀,text,string,자유기재 또는 연계키 기준,위험성평가
+09_inspection_action_log.csv,Inspection_ID,안전점검 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,안전점검 지적·조치대장
+09_inspection_action_log.csv,Source_Document_No,원천 점검일지 문서번호,text,string,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Issue_DateTime,지적 발생일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,안전점검 지적·조치대장
+09_inspection_action_log.csv,Zone,대구역 코드,text,string,A | B | C | D,안전점검 지적·조치대장
+09_inspection_action_log.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | A4 | B1 | B2 | B3 | C1 | C2 | C3 | D1 | D2 | D3,안전점검 지적·조치대장
+09_inspection_action_log.csv,Finding_Code,반복성 판정을 위한 지적유형 코드,text,string,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Category,점검 분류,text,string,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Finding,지적내용,text,string,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Severity,지적 심각도,text,string,High | Low | Medium,안전점검 지적·조치대장
+09_inspection_action_log.csv,Corrective_Action,조치내용,text,string,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Owner,조치 담당,text,string,협력사A(철근) | 협력사J(설비) | 협력사C(데크) | 협력사I(토목) | 협력사G(외장) | 협력사B(형틀) | 협력사K(전기) | 협력사F(물류) | 협력사L(가설안전) | 협력사D(콘크리트) | 협력사H(철골) | 현장안전팀,안전점검 지적·조치대장
+09_inspection_action_log.csv,Due_DateTime,조치기한,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Closed_DateTime,조치완료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,안전점검 지적·조치대장
+09_inspection_action_log.csv,Status,상태,text,string,Closed | In Progress | Open,안전점검 지적·조치대장
+09_inspection_action_log.csv,Recurrence_Flag,동일 지적유형·세부구역에서 이전 조치완료 후 다시 발생한 경우 Y,text,string,N | Y,안전점검 지적·조치대장
+09_inspection_action_log.csv,Before_Photo_ID,조치 전 사진 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,안전점검 지적·조치대장
+09_inspection_action_log.csv,After_Photo_ID,조치 후 사진 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,안전점검 지적·조치대장
+10_near_miss_reports.csv,NearMiss_ID,아차사고 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,아차사고 기록
+10_near_miss_reports.csv,Occurrence_DateTime,발생일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,아차사고 기록
+10_near_miss_reports.csv,Zone,대구역 코드,text,string,A | B | C | D,아차사고 기록
+10_near_miss_reports.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | A4 | B1 | B2 | C1 | C3 | D2 | D3,아차사고 기록
+10_near_miss_reports.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,아차사고 기록
+10_near_miss_reports.csv,Equipment_ID,장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,아차사고 기록
+10_near_miss_reports.csv,Related_Event_ID,사건과 직접 관련된 반입(DL-) 또는 양중(LF-) 이벤트 ID. 단순 배경 이벤트 연결 금지,text,string,DL-* 반입 이벤트 또는 LF-* 양중 이벤트; 공란 가능,아차사고 기록
+10_near_miss_reports.csv,Event_Type,사건 유형,text,string,고소작업 낙하위험 | 신호수 시야제한 | 양중·배제구역 접근 | 인양물 회전 위험 | 자재·통로 간섭 | 차량·보행자 교행 | 차량·타설 연계 | 철근 적치·협착 | 토목장비·보행 접근 | 하역·지게차 충돌위험 | 호이스트 출입위험 | 화기·불티 위험,아차사고 기록
+10_near_miss_reports.csv,Immediate_Cause,직접 원인,text,string,가연물 미제거 | 게이트 교행 | 결속 해체 작업자 접근 | 공구 고정 미흡 | 굴착기 선회부 접근 | 방염포 이격 | 방호울 문 개방 | 배제구역 경계 접근 | 번들 끝단 돌출 | 아웃트리거 주변 통행 | 연속 반입 중 펌프카 접근구역 교행 | 인양물 하부 이동 | 인양물 흔들림 | 자재 임시적치 | 작업대 이동경로 적치 | 적재물 고정 미흡 | 적치물 시야 방해 | 출입문 관리 | 통로 점유 | 호스 정리 작업자 대기선 이탈 | 후방 사각 진입 | 후진 사각지대,아차사고 기록
+10_near_miss_reports.csv,Narrative,상황 서술,text,string,자유기재 또는 연계키 기준,아차사고 기록
+10_near_miss_reports.csv,Immediate_Action,즉시조치,text,string,공구 회수·고정끈 교체 | 돌출 자재 즉시 재배치 | 시운전 중지·출입통제 | 신호수 위치 변경·시야확보 | 양중 일시정지·작업자 퇴피 | 유도로프 재정렬 후 재개 | 장비 일시정지·작업자 퇴피 | 적치 위치 즉시 조정 | 지게차 즉시정지 후 작업자 퇴피 | 차량 일시정지 및 통행 우선순위 재확인 | 차량 일시정지 후 유도자 위치 재배치 | 화기작업 중지·방염포 재설치,아차사고 기록
+10_near_miss_reports.csv,Corrective_Action,조치내용,text,string,자유기재 또는 연계키 기준,아차사고 기록
+10_near_miss_reports.csv,Action_Status,후속조치 상태,text,string,Closed | In Progress | Monitoring,아차사고 기록
+11_work_permits.csv,Permit_ID,작업허가 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,작업허가 기록
+11_work_permits.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,작업허가 기록
+11_work_permits.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,작업허가 기록
+11_work_permits.csv,Scope_Task_IDs,허가 적용 공정 ID 목록,text,string,해당 파일·참조테이블의 식별자 규칙 참조,작업허가 기록
+11_work_permits.csv,Equipment_ID,장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,작업허가 기록
+11_work_permits.csv,Zone,대구역 코드,text,string,A | C | D,작업허가 기록
+11_work_permits.csv,Subzone,세부구역 코드,text,string,A3 | C1 | C2 | C3 | D1 | D2 | D3,작업허가 기록
+11_work_permits.csv,Permit_Type,작업허가 유형,text,string,고소작업 | 굴착·토공 | 중량물 양중 | 화기작업,작업허가 기록
+11_work_permits.csv,Requesting_Team,신청 작업팀,text,string,협력사J(설비) | 협력사I(토목) | 협력사G(외장) | 양중팀,작업허가 기록
+11_work_permits.csv,Start_DateTime,허가 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,작업허가 기록
+11_work_permits.csv,End_DateTime,허가 종료일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,작업허가 기록
+11_work_permits.csv,Approval_Status,허가 승인상태,text,string,승인 | 조건부승인,작업허가 기록
+11_work_permits.csv,Prework_Check_Status,작업 전 확인결과,text,string,보완 후 적합 | 적합,작업허가 기록
+11_work_permits.csv,Fire_Watch,화재감시자 배치여부,text,string,배치 | 해당없음,작업허가 기록
+11_work_permits.csv,Gas_O2_Pct,산소농도,%,number,20.7 | 20.8 | 20.9,작업허가 기록
+11_work_permits.csv,Gas_LEL_Pct,가연성가스 농도,%,number,0.1 | 0.3 | 0.4 | 0.5 | 0.9 | 1.0 | 1.2 | 1.4,작업허가 기록
+11_work_permits.csv,Approver,승인자 구분,text,string,양중책임자 | 현장안전팀,작업허가 기록
+11_work_permits.csv,Prework_Check_Detail,작업 전 확인 상세,text,string,가연물 제거·화재감시자 배치 | 방염포·소화기·화재감시자 확인 | 신호수·결속상태·접근통제 확인 | 용접기 접지·소화기 위치 확인 | 일일 양중계획·풍속·배제구역 확인 | 작업구역 출입통제·비상동선 확인 | 작업발판·추락방지·출입통제 확인 | 장비점검·유도자 배치 확인 | 장비점검표·풍속계·작업반경 확인,작업허가 기록
+12_tbm_log.csv,TBM_ID,TBM 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,TBM 실시기록
+12_tbm_log.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,TBM 실시기록
+12_tbm_log.csv,Start_DateTime,TBM 시작일시,YYYY-MM-DD HH:MM,datetime,자유기재 또는 연계키 기준,TBM 실시기록
+12_tbm_log.csv,Task_ID,공정 고유번호,text,string,해당 파일·참조테이블의 식별자 규칙 참조,TBM 실시기록
+12_tbm_log.csv,Zone,대구역 코드,text,string,A | B | C | D,TBM 실시기록
+12_tbm_log.csv,Subzone,세부구역 코드,text,string,A1 | A2 | A3 | B1 | B2 | B3 | C1 | C2 | C3 | D1 | D2 | D3,TBM 실시기록
+12_tbm_log.csv,Team,작업팀,text,string,자유기재 또는 연계키 기준,TBM 실시기록
+12_tbm_log.csv,Planned_Workers,계획 투입인원,명,number,자유기재 또는 연계키 기준,TBM 실시기록
+12_tbm_log.csv,Attendance_Count,TBM 참석인원,명,number,당일 실투입인원 이하(계획인원은 초과할 수 있음),TBM 실시기록
+12_tbm_log.csv,Hazard_Topics,당일 주요 위험주제,text,string,자유기재 또는 연계키 기준,TBM 실시기록
+12_tbm_log.csv,Special_Instruction,특별 전달사항,text,string,동선 변경사항 확인 | 신호수·작업반 역할 재확인 | 작업순서·대피동선 확인 | 작업중지 기준 및 비상연락 공유,TBM 실시기록
+13_weather_hourly.csv,Date,일자,YYYY-MM-DD,date,자유기재 또는 연계키 기준,시간대별 가상 기상관측
+13_weather_hourly.csv,Time,관측시각,HH:MM,string,06:00 | 07:00 | 08:00 | 09:00 | 10:00 | 11:00 | 12:00 | 13:00 | 14:00 | 15:00 | 16:00 | 17:00,시간대별 가상 기상관측
+13_weather_hourly.csv,Temperature_C,기온,°C,number,자유기재 또는 연계키 기준,시간대별 가상 기상관측
+13_weather_hourly.csv,Wind_mps,현장 기상관측 지상 10m 높이 10분 평균풍속(가상값),m/s,number,양중일지 지브 높이 보정풍속과 직접 동일값 아님,시간대별 가상 기상관측
+13_weather_hourly.csv,Rain_mm,강우량,mm,number,0.0 | 0.7 | 1.4 | 1.7 | 1.8 | 2.2 | 2.3 | 2.7 | 3.2,시간대별 가상 기상관측
+14_environment_complaints.csv,Record_ID,환경·민원 기록 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,환경측정·민원기록
+14_environment_complaints.csv,Date,일자,YYYY-MM-DD,date,2026-10-06 | 2026-10-08 | 2026-10-12 | 2026-10-15 | 2026-10-19 | 2026-10-21 | 2026-10-23 | 2026-10-27 | 2026-10-28 | 2026-10-30,환경측정·민원기록
+14_environment_complaints.csv,Zone,대구역 코드,text,string,A | B | C | D,환경측정·민원기록
+14_environment_complaints.csv,Type,기록 유형,text,string,교통 | 분진 | 소음 | 우천 | 진동 | 풍속,환경측정·민원기록
+14_environment_complaints.csv,Description,기록내용,text,string,자유기재 또는 연계키 기준,환경측정·민원기록
+14_environment_complaints.csv,Measured_Value,측정·관찰값,기록별 Unit 컬럼 참조,number,0.12 | 0.14 | 1.8 | 12.4 | 13.0 | 2 | 3 | 67.8 | 70.0,환경측정·민원기록
+14_environment_complaints.csv,Unit,단위,text,string,cm/s | dB(A) | m/s | mg/m3 | mm/h | 대,환경측정·민원기록
+14_environment_complaints.csv,Source_or_Complainant,측정원·민원주체,text,string,경비실 | 인근 주거시설 | 인접 사무시설 | 인접 상가 | 현장관리 | 현장측정,환경측정·민원기록
+14_environment_complaints.csv,Response_Action,대응조치,text,string,가림막 결속 보강 | 배수펌프 가동·미끄럼 통제 | 배차간격 12~15분 유지·A4 진입 신호수 보강 | 살수·청소 주기 단축 | 신호방식 조정·작업시간 집중 | 양중 중지기준 재공지 | 예약슬롯 재안내·조기 도착 차량 장외대기 안내 | 예약확인 후 분산 입문 | 작업시간 조정·방음패드 설치 | 장비 점검·작업안내,환경측정·민원기록
+15_site_constraints.csv,Constraint_ID,제약조건 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,현장 운영 제약조건
+15_site_constraints.csv,Constraint,제약조건명,text,string,단일 메인게이트 | 대형 자재 반입시간 | 레미콘 연속타설 | 소음·분진 관리 | 야간작업 제한 | 양중반경 중첩 | 외부 보행통로 상시 개방 | 적치공간 제한 | 지하램프 공용 | 타워크레인 상호 간섭,현장 운영 제약조건
+15_site_constraints.csv,Requirement,운영 요구조건,text,string,자유기재 또는 연계키 기준,현장 운영 제약조건
+15_site_constraints.csv,Fictional_Source_Document,가상 근거문서,text,string,가상 가설계획도 G-01 | 가상 가설동선계획도 G-02 | 가상 교통처리계획서 v1.2 | 가상 도로점용 허가조건 | 가상 물류관리계획서 M-01 | 가상 양중계획서 L-01 | 가상 콘크리트 타설계획서 C-01 | 가상 특정공사 신고조건 | 가상 환경관리계획서 E-01,현장 운영 제약조건
+15_site_constraints.csv,Applicable_Area,적용구역,text,string,"A/B1/B2/B3/C1 | B/C | B1 | B1/A4/A2 | B1/B2, A4(레미콘 예외) | B2/B3 | B3/C1 | D1 | 전 구역",현장 운영 제약조건
+15_site_constraints.csv,Analysis_Point,분석 시 참고사항,text,string,자유기재 또는 연계키 기준,현장 운영 제약조건
+16_lookahead_90d.csv,Lookahead_ID,90일 전망공정 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Week,ISO 주차,text,string,자유기재 또는 연계키 기준,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Building,동·시설 구분,text,string,1동 | 2동 | 포디움,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Area,작업구역,text,string,A1/A2 | C1/C2 | D2/D3,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Major_Work,주요 작업,text,string,자유기재 또는 연계키 기준,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Planned_Workers,계획 투입인원,명,number,자유기재 또는 연계키 기준,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Main_Equipment,주요 장비,text,string,"SL-03, FL-02 | TC-01, PC-01 | TC-02, SL-01, SL-02",90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Primary_Risk,예상 주요 위험,text,string,양중·타설 중첩 | 지하통로 혼잡 | 풍속·외장 동시작업,90일 Look-ahead 전망공정
+16_lookahead_90d.csv,Worker_Basis,인원 수치 기준,text,string,공종별 계획 투입인원(행 단위),90일 Look-ahead 전망공정
+17_equipment_registry.csv,Equipment_ID,장비 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,장비 등록대장
+17_equipment_registry.csv,Equipment_Type,장비 종류,text,string,건설용 호이스트 | 고소작업대 | 굴착기 | 이동식크레인 | 지게차 | 타워크레인 | 펌프카,장비 등록대장
+17_equipment_registry.csv,Use,주 용도,text,string,1동 | 1동 골조·호이스트 설치 지원 | A4 펌프카 거치·A2 타설 압송 | 보강철골 양중 | 적치장 | 지하 설비 | 지하 토목 | 지하램프·토목 | 포디움 외장 | 포디움 외장 양중 | 하역장 | 하역장·지하,장비 등록대장
+17_equipment_registry.csv,Primary_Zone,주 운용 대구역,text,string,A | B | B/D | C | D,장비 등록대장
+17_equipment_registry.csv,Specification,장비 규격,text,string,자유기재 또는 연계키 기준,장비 등록대장
+17_equipment_registry.csv,Operator_ID,장비 전담 운전원 ID,text,string,해당 파일·참조테이블의 식별자 규칙 참조,장비 등록대장
+16_lookahead_90d.csv,Season_Risk,계절 요인 예상 위험,text,string,자유기재,90일 Look-ahead 전망공정
+18_climate_reference_90d.csv,Week,ISO 주차,YYYY-Www,string,2026-W45 ~ 2027-W04,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Week_Start,주 시작일(월),YYYY-MM-DD,date,자유기재,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Avg_Temp_C,주 평균기온 전망,°C,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Min_Temp_C,주 최저기온 전망,°C,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Expected_Rain_Days,강우 예상일수,일,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Expected_Snow_Days,강설 예상일수,일,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Expected_Strong_Wind_Days,강풍(지상10m 10분평균 10 m/s 이상) 예상일수,일,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Freezing_Days,최저기온 0℃ 이하 예상일수,일,number,가상 전망값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Sunset_Time,주 중간일 일몰시각(서울 기준 근사),HH:MM,string,참고값,90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Planned_Work_Days,주간 계획 작업일수,일,number,"주 6일(월~토) 기준, 일요일·공휴일(12/25, 1/1) 제외. 2026-W53은 1/1 휴무로 5일이며 12/31은 축소운영(인원 감축)이나 작업일에 포함(공정표 01과 동일)",90일 기상·환경 전망 참고자료(가상)
+18_climate_reference_90d.csv,Note,비고,text,string,가상 전망값 표기,90일 기상·환경 전망 참고자료(가상)

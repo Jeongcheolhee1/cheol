@@ -1,0 +1,14 @@
+Equipment_ID,Equipment_Type,Use,Primary_Zone,Specification,Operator_ID
+TC-01,타워크레인,1동 골조·호이스트 설치 지원,A,25t,OP-TC01
+TC-02,타워크레인,포디움 외장 양중,C,20t,OP-TC02
+MC-01,이동식크레인,보강철골 양중,C,50t,OP-MC01
+EX-01,굴착기,지하램프·토목,D,0.8㎥,OP-EX01
+EX-02,굴착기,지하 토목,D,0.6㎥,OP-EX02
+FL-01,지게차,하역장,B,5t,OP-FL01
+FL-02,지게차,하역장·지하,B/D,3.5t,OP-FL02
+FL-03,지게차,적치장,B,3t,OP-FL03
+PC-01,펌프카,A4 펌프카 거치·A2 타설 압송,A,52m,OP-PC01
+SL-01,고소작업대,포디움 외장,C,18m,OP-SL01
+SL-02,고소작업대,포디움 외장,C,14m,OP-SL02
+SL-03,고소작업대,지하 설비,D,10m,OP-SL03
+HST-01,건설용 호이스트,1동,A,2t,OP-HST01
