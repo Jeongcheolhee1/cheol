@@ -59,3 +59,18 @@ python3 scripts/draw_riskmap.py      # → out/risk_map.png / .svg
 - 교육·경연용 가상 데이터. 실제 현장·기업·인물과 무관, 협력사는 코드(A~L) 표기.
 - 원천기록 Excel과 분석용 CSV는 **동일 데이터**이므로 중복 합산하지 않음.
 - 혼재슬롯은 카메라 로그 10개 슬롯/일 × 23일 = 구역당 230슬롯 기준.
+
+---
+
+# 미션 2. 위험·간섭구역 분석
+
+```bash
+python3 scripts/mission2_analysis.py   # data/*.csv → out/mission2/
+```
+
+| 산출물 | 내용 |
+|---|---|
+| `docs/mission2_report.md` | 미션2 분석 보고서 (결론·근거·가정·한계) |
+| `out/mission2/fig1~fig7_*.png` | CEI 히트맵, 시간대 프로파일, 요일×시간, 대표일 타임라인, 간섭 매트릭스, 병목, 위험·간섭 지도 |
+| `out/mission2/t1~t8_*.csv` | 구역×시간 CEI, 구역 순위, 간섭 이벤트·요약, B2 동시점유, 시간대 프로파일, 대기 원인, 장비 대기, 공정편차 |
+| `out/mission2/summary.json` | 핵심 수치·품질 이슈 요약 |
