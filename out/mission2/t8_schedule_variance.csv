@@ -1,0 +1,23 @@
+﻿Task_ID,Subzone,Task_Name,Predecessor,Planned_Finish,Forecast_Finish,Forecast_Variance_Days,Delay_Reason_Code,Status_AsOf_2026_10_31
+T001,A1,코어벽 철근 조립,,2026-10-10,2026-10-12,1,MAT_DELAY,Completed
+T002,A1,코어벽 거푸집 설치,T001,2026-10-14,2026-10-16,2,LIFT_SLOT,Completed
+T003,A2,슬래브 데크·거푸집 설치,T002,2026-10-17,2026-10-20,2,LIFT_SLOT,Completed
+T004,A2,슬래브 철근 배근,T003,2026-10-23,2026-10-24,1,MAT_DELAY,Completed
+T005,A2,슬래브 콘크리트 타설,T004,2026-10-29,2026-11-02,3,MAT_DELAY,In Progress
+T006,A3,건설용 호이스트 설치·시운전,,2026-11-03,2026-11-04,1,MOB_DELAY,In Progress
+T007,B1,반입차량 게이트 운영,,2026-12-31,2026-12-31,0,ONGOING,In Progress
+T008,B2,자재 하역·분류,T007,2026-12-31,2026-12-31,0,ONGOING,In Progress
+T009,B3,자재 적치·불출,T008,2026-12-31,2026-12-31,0,ONGOING,In Progress
+T010,C1,외장 브래킷 설치,,2026-10-20,2026-10-23,3,LIFT_CONFLICT,Completed
+T011,C2,커튼월 자재 양중,T010,2026-11-07,2026-11-09,1,WIND_HOLD,In Progress
+T012,C3,파사드 보강철골 양중·설치,,2026-10-28,2026-10-30,2,PERMIT_DELAY,Completed
+T013,D1,지하램프 굴착면 정리,,2026-10-12,2026-10-12,0,ROUTE_CONFLICT,Completed
+T014,D3,흙막이 보수·방수 바탕정리,T013,2026-11-06,2026-11-07,1,MEP_CONFLICT,In Progress
+T015,D2,슬리브·인서트 설치,,2026-10-17,2026-10-17,0,DRAWING_REWORK,Completed
+T016,D2,덕트·배관 지지대 설치,T015,2026-11-10,2026-11-12,2,SPACE_CONFLICT,In Progress
+T017,D2,가설전기·조명 보강,,2026-10-21,2026-10-22,1,CLOSEOUT_DELAY,Completed
+T018,D2,배관 용접·화기작업,T016,2026-11-14,2026-11-16,1,PERMIT_DELAY,In Progress
+T019,A3,1동 작업자 동선 분리시설 설치,,2026-10-10,2026-10-08,-1,NONE,Completed
+T020,B1,게이트 보행·차량 분리시설 개선,,2026-10-19,2026-10-21,2,DELIVERY_PRESSURE,Completed
+T021,D1,지하램프 임시 보행통로 설치,,2026-10-28,2026-10-30,2,ROUTE_CONFLICT,Completed
+T022,C2,양중 통제구역 설정·유지,,2026-12-31,2026-12-31,0,ONGOING,In Progress

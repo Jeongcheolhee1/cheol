@@ -128,8 +128,18 @@ def main():
     score = pd.Series(0.0, index=df.index)
     for label, col, w in COMPONENTS:
         df["n_" + col] = norm(df[col].astype(float))
+        # 기여도(0~100 스케일). 합계 = 위험지수
+        df["c_" + col] = (df["n_" + col] * w * 100).round(1)
         score += df["n_" + col] * w
     df["RiskIndex"] = (score * 100).round(1)
+
+    # 주된 동인 = 기여도 1위 구성요소
+    contrib_cols = ["c_" + col for _, col, _ in COMPONENTS]
+    label_of = {("c_" + col): label for label, col, _ in COMPONENTS}
+    df["TopDriver"] = df[contrib_cols].idxmax(axis=1).map(label_of)
+    df["TopDriverShare"] = (
+        df[contrib_cols].max(axis=1) / df["RiskIndex"].replace(0, pd.NA) * 100
+    ).fillna(0).round(0)
 
     # 등급 (위험지수 기준)
     def grade(v):
@@ -146,7 +156,8 @@ def main():
     df["Grade"] = df["RiskIndex"].apply(grade)
     df = df.sort_values("RiskIndex", ascending=False).reset_index(drop=True)
 
-    cols = ["Subzone", "Name", "Sub", "RiskIndex", "Grade", "NearMiss",
+    cols = ["Subzone", "Name", "Sub", "RiskIndex", "Grade", "TopDriver",
+            "TopDriverShare", "NearMiss",
             "NearMissUnclosed", "Alerts", "MixedSlot", "MixedRate",
             "Inspections", "InspOpen", "InspHighOpen", "Unclosed",
             "Residual", "PeakPeople", "Slots", "EnvIssue"]

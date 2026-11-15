@@ -1,0 +1,715 @@
+{
+  "analysis_days": 23,
+  "pour_days": [
+    "2026-10-19",
+    "2026-10-23",
+    "2026-10-28"
+  ],
+  "CEI_weights_assumption": {
+    "노출강도(사람×장비)": 0.35,
+    "근접경보율": 0.35,
+    "혼재비율": 0.15,
+    "아차사고": 0.15
+  },
+  "CEI_top_cells": [
+    {
+      "Subzone": "B2",
+      "h": 10,
+      "CEI": 81.2,
+      "expo": 21.91,
+      "alerts": 15,
+      "mixed": 0.91
+    },
+    {
+      "Subzone": "B2",
+      "h": 15,
+      "CEI": 78.1,
+      "expo": 18.43,
+      "alerts": 21,
+      "mixed": 0.91
+    },
+    {
+      "Subzone": "B2",
+      "h": 9,
+      "CEI": 64.4,
+      "expo": 12.61,
+      "alerts": 15,
+      "mixed": 0.78
+    },
+    {
+      "Subzone": "B2",
+      "h": 14,
+      "CEI": 58.5,
+      "expo": 12.83,
+      "alerts": 15,
+      "mixed": 0.87
+    },
+    {
+      "Subzone": "B2",
+      "h": 11,
+      "CEI": 54.6,
+      "expo": 12.22,
+      "alerts": 14,
+      "mixed": 0.78
+    },
+    {
+      "Subzone": "B1",
+      "h": 10,
+      "CEI": 54.2,
+      "expo": 7.09,
+      "alerts": 13,
+      "mixed": 0.91
+    },
+    {
+      "Subzone": "B1",
+      "h": 15,
+      "CEI": 34.7,
+      "expo": 5.22,
+      "alerts": 8,
+      "mixed": 0.87
+    },
+    {
+      "Subzone": "B1",
+      "h": 9,
+      "CEI": 29.9,
+      "expo": 4.22,
+      "alerts": 8,
+      "mixed": 0.65
+    },
+    {
+      "Subzone": "B1",
+      "h": 14,
+      "CEI": 28.1,
+      "expo": 3.78,
+      "alerts": 7,
+      "mixed": 0.7
+    },
+    {
+      "Subzone": "D3",
+      "h": 9,
+      "CEI": 24.4,
+      "expo": 4.87,
+      "alerts": 0,
+      "mixed": 0.61
+    },
+    {
+      "Subzone": "D3",
+      "h": 15,
+      "CEI": 24.3,
+      "expo": 4.78,
+      "alerts": 0,
+      "mixed": 0.61
+    },
+    {
+      "Subzone": "C1",
+      "h": 11,
+      "CEI": 22.9,
+      "expo": 2.52,
+      "alerts": 0,
+      "mixed": 0.26
+    }
+  ],
+  "zone_rank": [
+    {
+      "Subzone": "B2",
+      "CEI_mean": 38.1,
+      "CEI_peak": 81.2,
+      "peak_hour": 10,
+      "alerts": 83,
+      "mixed_rate": 0.565,
+      "near_miss": 2
+    },
+    {
+      "Subzone": "B3",
+      "CEI_mean": 18.3,
+      "CEI_peak": 21.3,
+      "peak_hour": 8,
+      "alerts": 0,
+      "mixed_rate": 0.774,
+      "near_miss": 0
+    },
+    {
+      "Subzone": "B1",
+      "CEI_mean": 18.3,
+      "CEI_peak": 54.2,
+      "peak_hour": 10,
+      "alerts": 42,
+      "mixed_rate": 0.422,
+      "near_miss": 1
+    },
+    {
+      "Subzone": "D3",
+      "CEI_mean": 17.5,
+      "CEI_peak": 24.4,
+      "peak_hour": 9,
+      "alerts": 0,
+      "mixed_rate": 0.609,
+      "near_miss": 2
+    },
+    {
+      "Subzone": "D1",
+      "CEI_mean": 14.5,
+      "CEI_peak": 20.2,
+      "peak_hour": 11,
+      "alerts": 30,
+      "mixed_rate": 0.326,
+      "near_miss": 0
+    },
+    {
+      "Subzone": "D2",
+      "CEI_mean": 6.4,
+      "CEI_peak": 15.0,
+      "peak_hour": 14,
+      "alerts": 0,
+      "mixed_rate": 0.104,
+      "near_miss": 4
+    },
+    {
+      "Subzone": "A2",
+      "CEI_mean": 5.8,
+      "CEI_peak": 15.1,
+      "peak_hour": 13,
+      "alerts": 0,
+      "mixed_rate": 0.078,
+      "near_miss": 4
+    },
+    {
+      "Subzone": "C1",
+      "CEI_mean": 5.5,
+      "CEI_peak": 22.9,
+      "peak_hour": 11,
+      "alerts": 0,
+      "mixed_rate": 0.083,
+      "near_miss": 4
+    },
+    {
+      "Subzone": "C2",
+      "CEI_mean": 4.5,
+      "CEI_peak": 16.5,
+      "peak_hour": 11,
+      "alerts": 5,
+      "mixed_rate": 0.139,
+      "near_miss": 0
+    },
+    {
+      "Subzone": "A1",
+      "CEI_mean": 4.1,
+      "CEI_peak": 13.7,
+      "peak_hour": 13,
+      "alerts": 0,
+      "mixed_rate": 0.07,
+      "near_miss": 2
+    },
+    {
+      "Subzone": "A4",
+      "CEI_mean": 3.9,
+      "CEI_peak": 21.5,
+      "peak_hour": 8,
+      "alerts": 4,
+      "mixed_rate": 0.039,
+      "near_miss": 3
+    },
+    {
+      "Subzone": "A3",
+      "CEI_mean": 3.6,
+      "CEI_peak": 11.3,
+      "peak_hour": 9,
+      "alerts": 0,
+      "mixed_rate": 0.1,
+      "near_miss": 2
+    },
+    {
+      "Subzone": "C3",
+      "CEI_mean": 2.1,
+      "CEI_peak": 9.8,
+      "peak_hour": 15,
+      "alerts": 0,
+      "mixed_rate": 0.052,
+      "near_miss": 1
+    }
+  ],
+  "D1_phase": [
+    {
+      "phase": "①10/05~10/12 토목우선",
+      "days": 6,
+      "people": 5.13,
+      "excavator": 2.0,
+      "forklift": 0.0,
+      "alerts": 30,
+      "alerts_per_day": 5.0
+    },
+    {
+      "phase": "②10/13~ 장비·설비 통과",
+      "days": 17,
+      "people": 1.69,
+      "excavator": 0.0,
+      "forklift": 0.14,
+      "alerts": 0,
+      "alerts_per_day": 0.0
+    }
+  ],
+  "B1_alerts_per_day_pour": 4.0,
+  "B1_alerts_per_day_nonpour": 1.5,
+  "rmc_gap": {
+    "mean": 13.3,
+    "min": 9.0,
+    "max": 19.0,
+    "below12": 7,
+    "above15": 8,
+    "n": 33
+  },
+  "interference": [
+    {
+      "code": "I1",
+      "type": "TC-01×TC-02 동시양중(C10)",
+      "events": 8,
+      "days": 5,
+      "minutes": 104.0,
+      "near_miss_linked": "NM-0010"
+    },
+    {
+      "code": "I2",
+      "type": "MC-01×TC-02 동시양중(C3↔C1 인접)",
+      "events": 3,
+      "days": 1,
+      "minutes": 56.0,
+      "near_miss_linked": ""
+    },
+    {
+      "code": "I3",
+      "type": "레미콘 타설창×일반반입(B1 공유)",
+      "events": 7,
+      "days": 3,
+      "minutes": 224.0,
+      "near_miss_linked": ""
+    },
+    {
+      "code": "I4",
+      "type": "B2 하역 동시점유 ≥3대(C08)",
+      "events": 6,
+      "days": 6,
+      "minutes": 231.0,
+      "near_miss_linked": ""
+    },
+    {
+      "code": "I5",
+      "type": "TC-01 양중×B2 하역 동시(C04)",
+      "events": 18,
+      "days": 8,
+      "minutes": 276.0,
+      "near_miss_linked": ""
+    },
+    {
+      "code": "I6",
+      "type": "강풍 양중보류일 반입 그대로 진행",
+      "events": 3,
+      "days": 3,
+      "minutes": 0.0,
+      "near_miss_linked": ""
+    },
+    {
+      "code": "I7",
+      "type": "D2 3개 이상 공종 동시작업",
+      "events": 8,
+      "days": 8,
+      "minutes": 0.0,
+      "near_miss_linked": "NM-0021"
+    }
+  ],
+  "B2_conc_days_ge3": [
+    "2026-10-14",
+    "2026-10-15",
+    "2026-10-24",
+    "2026-10-26",
+    "2026-10-27",
+    "2026-10-31"
+  ],
+  "wind_days": [
+    "2026-10-15",
+    "2026-10-21",
+    "2026-10-27"
+  ],
+  "permit_gap": {
+    "굴착기 가동일 중 굴착허가 없음": 9,
+    "굴착 공백 예": [
+      [
+        "2026-10-07",
+        "T013"
+      ],
+      [
+        "2026-10-08",
+        "T013"
+      ],
+      [
+        "2026-10-12",
+        "T013"
+      ],
+      [
+        "2026-10-19",
+        "T014"
+      ],
+      [
+        "2026-10-21",
+        "T014"
+      ],
+      [
+        "2026-10-23",
+        "T014"
+      ]
+    ],
+    "SL-03(지하 고소작업대) 가동일 중 고소허가 없음": 17,
+    "SL-03 가동일": 17
+  },
+  "lift_starts_by_hour": {
+    "7": 0,
+    "8": 2,
+    "9": 5,
+    "10": 11,
+    "11": 17,
+    "12": 0,
+    "13": 38,
+    "14": 10,
+    "15": 9,
+    "16": 7
+  },
+  "lift_13h_share": 0.384,
+  "gate_by_slot": {
+    "06:30-07:00": {
+      "Entry_Count": 73.4,
+      "Exit_Count": 0.0
+    },
+    "07:00-07:30": {
+      "Entry_Count": 64.5,
+      "Exit_Count": 0.0
+    },
+    "07:30-08:00": {
+      "Entry_Count": 12.6,
+      "Exit_Count": 0.0
+    },
+    "16:30-17:00": {
+      "Entry_Count": 0.0,
+      "Exit_Count": 105.5
+    },
+    "17:00-17:30": {
+      "Entry_Count": 0.0,
+      "Exit_Count": 45.0
+    }
+  },
+  "dow_days": {
+    "월": 4,
+    "화": 4,
+    "수": 4,
+    "목": 4,
+    "금": 3,
+    "토": 4
+  },
+  "dow_score_per_day": {
+    "월": 18.0,
+    "화": 11.75,
+    "수": 16.5,
+    "목": 11.5,
+    "금": 18.0,
+    "토": 13.25
+  },
+  "high_risk_task_rows_by_dow": {
+    "월": 35,
+    "화": 37,
+    "수": 37,
+    "목": 38,
+    "금": 30,
+    "토": 37
+  },
+  "crew_wait_total": {
+    "minutes": 930,
+    "worker_hours": 226.4
+  },
+  "crew_wait_by_cause": [
+    {
+      "cause": "강풍 양중보류",
+      "rows": 7,
+      "minutes": 550,
+      "worker_hours": 115.167,
+      "share": 0.509
+    },
+    {
+      "cause": "작업면 인계 지연",
+      "rows": 7,
+      "minutes": 165,
+      "worker_hours": 45.75,
+      "share": 0.202
+    },
+    {
+      "cause": "자재반입 확인 대기",
+      "rows": 6,
+      "minutes": 140,
+      "worker_hours": 42.167,
+      "share": 0.186
+    },
+    {
+      "cause": "양중순서(슬롯) 조정",
+      "rows": 5,
+      "minutes": 75,
+      "worker_hours": 23.333,
+      "share": 0.103
+    }
+  ],
+  "equipment_wait": [
+    {
+      "Equipment_ID": "MC-01",
+      "days": 11,
+      "op": 945,
+      "wait": 1022,
+      "maint": 150,
+      "wait_ratio": 0.52,
+      "wait_ratio_excl_wind": 0.417,
+      "wind_wait": 600.0
+    },
+    {
+      "Equipment_ID": "TC-02",
+      "days": 17,
+      "op": 1810,
+      "wait": 1553,
+      "maint": 145,
+      "wait_ratio": 0.462,
+      "wait_ratio_excl_wind": 0.309,
+      "wind_wait": 900.0
+    },
+    {
+      "Equipment_ID": "TC-01",
+      "days": 23,
+      "op": 2356,
+      "wait": 1751,
+      "maint": 235,
+      "wait_ratio": 0.426,
+      "wait_ratio_excl_wind": 0.336,
+      "wind_wait": 900.0
+    },
+    {
+      "Equipment_ID": "FL-02",
+      "days": 23,
+      "op": 5494,
+      "wait": 1550,
+      "maint": 425,
+      "wait_ratio": 0.22,
+      "wait_ratio_excl_wind": 0.217,
+      "wind_wait": 193.0
+    },
+    {
+      "Equipment_ID": "SL-01",
+      "days": 15,
+      "op": 3797,
+      "wait": 896,
+      "maint": 155,
+      "wait_ratio": 0.191,
+      "wait_ratio_excl_wind": 0.189,
+      "wind_wait": 138.0
+    },
+    {
+      "Equipment_ID": "FL-03",
+      "days": 23,
+      "op": 5743,
+      "wait": 1345,
+      "maint": 285,
+      "wait_ratio": 0.19,
+      "wait_ratio_excl_wind": 0.197,
+      "wind_wait": 93.0
+    },
+    {
+      "Equipment_ID": "SL-02",
+      "days": 15,
+      "op": 3733,
+      "wait": 869,
+      "maint": 240,
+      "wait_ratio": 0.189,
+      "wait_ratio_excl_wind": 0.182,
+      "wind_wait": 129.0
+    },
+    {
+      "Equipment_ID": "FL-01",
+      "days": 23,
+      "op": 5927,
+      "wait": 1365,
+      "maint": 250,
+      "wait_ratio": 0.187,
+      "wait_ratio_excl_wind": 0.194,
+      "wind_wait": 161.0
+    },
+    {
+      "Equipment_ID": "PC-01",
+      "days": 3,
+      "op": 873,
+      "wait": 200,
+      "maint": 50,
+      "wait_ratio": 0.186,
+      "wait_ratio_excl_wind": 0.186,
+      "wind_wait": 0.0
+    },
+    {
+      "Equipment_ID": "SL-03",
+      "days": 17,
+      "op": 4644,
+      "wait": 1010,
+      "maint": 240,
+      "wait_ratio": 0.179,
+      "wait_ratio_excl_wind": 0.176,
+      "wind_wait": 195.0
+    },
+    {
+      "Equipment_ID": "HST-01",
+      "days": 10,
+      "op": 2034,
+      "wait": 429,
+      "maint": 155,
+      "wait_ratio": 0.174,
+      "wait_ratio_excl_wind": 0.165,
+      "wind_wait": 109.0
+    },
+    {
+      "Equipment_ID": "EX-02",
+      "days": 6,
+      "op": 1721,
+      "wait": 340,
+      "maint": 50,
+      "wait_ratio": 0.165,
+      "wait_ratio_excl_wind": 0.167,
+      "wind_wait": 0.0
+    },
+    {
+      "Equipment_ID": "EX-01",
+      "days": 20,
+      "op": 5799,
+      "wait": 1142,
+      "maint": 275,
+      "wait_ratio": 0.165,
+      "wait_ratio_excl_wind": 0.172,
+      "wind_wait": 51.0
+    }
+  ],
+  "equipment_notes_total": {
+    "정상": 53,
+    "작업면 인계 대기": 48,
+    "자재순서 조정": 45,
+    "점검 후 재가동": 42,
+    "강풍 양중 보류(풍속 대기)": 8,
+    "양중 계획 없음(장비 점검·대기)": 6,
+    "타설일 양중 미계획(펌프카 타설)": 3,
+    "우천으로 양중 미실시": 1
+  },
+  "unload_to_lift_lag_median": {
+    "MC-01": 144.0,
+    "TC-01": 124.0,
+    "TC-02": 100.0
+  },
+  "unload_to_lift_lag_nextday": 6,
+  "lift_holds": {
+    "연계 반입 하역 미완료": 1,
+    "풍속 기준 초과": 13
+  },
+  "wind_exceed_hours": {
+    "TC-01": 21,
+    "TC-02": 21,
+    "MC-01": 21
+  },
+  "wind_recalc_mismatch": 0,
+  "wind_hold_all_justified": true,
+  "delay_code_days": [
+    {
+      "Delay_Reason_Code": "MAT_DELAY",
+      "count": 3,
+      "sum": 5
+    },
+    {
+      "Delay_Reason_Code": "LIFT_SLOT",
+      "count": 2,
+      "sum": 4
+    },
+    {
+      "Delay_Reason_Code": "LIFT_CONFLICT",
+      "count": 1,
+      "sum": 3
+    },
+    {
+      "Delay_Reason_Code": "PERMIT_DELAY",
+      "count": 2,
+      "sum": 3
+    },
+    {
+      "Delay_Reason_Code": "DELIVERY_PRESSURE",
+      "count": 1,
+      "sum": 2
+    },
+    {
+      "Delay_Reason_Code": "SPACE_CONFLICT",
+      "count": 1,
+      "sum": 2
+    },
+    {
+      "Delay_Reason_Code": "ROUTE_CONFLICT",
+      "count": 1,
+      "sum": 2
+    },
+    {
+      "Delay_Reason_Code": "CLOSEOUT_DELAY",
+      "count": 1,
+      "sum": 1
+    },
+    {
+      "Delay_Reason_Code": "MEP_CONFLICT",
+      "count": 1,
+      "sum": 1
+    },
+    {
+      "Delay_Reason_Code": "MOB_DELAY",
+      "count": 1,
+      "sum": 1
+    },
+    {
+      "Delay_Reason_Code": "WIND_HOLD",
+      "count": 1,
+      "sum": 1
+    }
+  ],
+  "tbm_missing_by_zone": {
+    "D2": 36,
+    "C2": 25,
+    "B1": 19,
+    "B3": 17,
+    "A2": 13,
+    "B2": 10,
+    "C3": 10,
+    "D3": 9,
+    "C1": 8,
+    "A1": 6,
+    "D1": 6,
+    "A3": 5
+  },
+  "tbm_missing_total": 164,
+  "quality": {
+    "delivery_source_doc_dup": [
+      {
+        "Delivery_ID": "DL-0077",
+        "Source_Document_No": "SRC-D-0077"
+      },
+      {
+        "Delivery_ID": "DL-0080",
+        "Source_Document_No": "SRC-D-0077"
+      }
+    ],
+    "delivery_unload_end_missing": [
+      "DL-0079"
+    ],
+    "delivery_reserved_start_outside_window": [
+      "DL-0001",
+      "DL-0003",
+      "DL-0004",
+      "DL-0002"
+    ],
+    "delivery_early_or_late_over_30min": [
+      "DL-0001",
+      "DL-0003",
+      "DL-0004",
+      "DL-0002"
+    ],
+    "inspection_closed_missing": 29
+  }
+}
